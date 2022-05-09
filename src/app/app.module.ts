@@ -19,7 +19,6 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterOutlet,
   
   ],
   providers: [],
