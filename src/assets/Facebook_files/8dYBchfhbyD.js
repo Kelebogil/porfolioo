@@ -1,0 +1,8 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("FbShortsUnifiedTofuVideoClickFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1894");c=b("FalcoLoggerInternal").create("fb_shorts_unified_tofu_video_click",a);e.exports=c}),null);
+__d("FbShortsUnifiedTofuVideoVpvFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1895");c=b("FalcoLoggerInternal").create("fb_shorts_unified_tofu_video_vpv",a);e.exports=c}),null);
+__d("UnifiedTofuTrayImpressionFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1975");c=b("FalcoLoggerInternal").create("unified_tofu_tray_impression",a);e.exports=c}),null);
+__d("UnifiedTofuTrayTabSwitchFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1976");c=b("FalcoLoggerInternal").create("unified_tofu_tray_tab_switch",a);e.exports=c}),null);
+__d("UnifiedTofuTrayVpvEndFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1977");c=b("FalcoLoggerInternal").create("unified_tofu_tray_vpv_end",a);e.exports=c}),null);
+__d("UnifiedTofuTrayVpvStartFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("1978");c=b("FalcoLoggerInternal").create("unified_tofu_tray_vpv_start",a);e.exports=c}),null);

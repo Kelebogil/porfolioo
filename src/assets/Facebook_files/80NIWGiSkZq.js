@@ -1,0 +1,25 @@
+if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
+
+__d("LexicalComposerContext",["cr:509"],(function(a,b,c,d,e,f){e.exports=b("cr:509")}),null);
+__d("MLCHealthLoggerEvent",["$InternalEnum"],(function(a,b,c,d,e,f){a=b("$InternalEnum")({DAILY_INTERACTION_WITH_SURFACE:"daily_interaction_with_surface",COMMIT_CREATE:"commit_create",COMMIT_EDIT:"commit_edit"});c=a;f["default"]=c}),66);
+__d("MlcHealthEventFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("2304");c=b("FalcoLoggerInternal").create("mlc_health_event",a);e.exports=c}),null);
+__d("MlcWorkHealthEventFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(a,b,c,d,e,f){"use strict";a=b("getFalcoLogPolicy_DO_NOT_USE")("2507");c=b("FalcoLoggerInternal").create("mlc_work_health_event",a);e.exports=c}),null);
+__d("MLCHealthInstrumentationPlugin__INTERNAL.react",["Lexical","LexicalComposerContext","LexicalUtils","MLCInstrumentationCommands","MlcHealthEventFalcoEvent","MlcWorkHealthEventFalcoEvent","gkx","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react").useLayoutEffect,i=c("gkx")("678680");b=c("gkx")("3118");var j=b?c("MlcWorkHealthEventFalcoEvent"):c("MlcHealthEventFalcoEvent"),k=new Set();function l(a,b){if(!i)return;j.log(function(){return{event:b,surface:a}})}function a(a){var b=a.editor__DEPRECATED,c=a.surface,e;if(b)e=b;else{a=d("LexicalComposerContext").useLexicalComposerContext();e=a[0]}h(function(){var a=function(){};k.has(c)||(a=e.registerUpdateListener(function(b){var d=b.dirtyLeaves;b=b.tags;if(k.has(c)){a();return}if(d.size===0||b.has("history-merge"))return;k.add(c);l(c,"daily_interaction_with_surface");a()}));return d("LexicalUtils").mergeRegister(a,e.registerCommand(d("MLCInstrumentationCommands").COMMIT_COMMAND,function(a){a==="create"?l(c,"commit_create"):l(c,"commit_edit");return!1},d("Lexical").COMMAND_PRIORITY_CRITICAL))},[e,c]);return null}g["default"]=a}),98);
+__d("MLCInteractionInstrumentationPlugin__INTERNAL.react",["cr:3286","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react");function a(a){return b("cr:3286")&&h.jsx(b("cr:3286"),babelHelpers["extends"]({},a))}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);
+__d("MLCTypingPerformancePlugin__INTERNAL.react",["FBLogger","LexicalComposerContext","cr:2012305","cr:308","cr:3287","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react"),i=d("react").useLayoutEffect,j=b("cr:2012305")||b("cr:308");function a(a){if(j===null)return null;b("cr:3287")&&b("cr:3287")();return h.jsx(k,babelHelpers["extends"]({},a))}a.displayName=a.name+" [from "+f.id+"]";function k(a){var b=a.annotations,e=a.editor__DEPRECATED,f=a.surface,g;if(e)g=e;else{a=d("LexicalComposerContext").useLexicalComposerContext();g=a[0]}i(function(){if(j===null)return;var a=null,d=g.registerRootListener(function(d){if(d===a)return;a!==null&&j.unregisterTypingPerf(a);d!==null&&((b==null?void 0:b.editor)!=null&&c("FBLogger")("unified_editor").warn('useMLCTypingPerformanceInstrumentation ignores annotations.editor. It will be overwritten with "LexicalEditor"'),j.trackTypingPerf(d,f,a,babelHelpers["extends"]({},b,{editor:"LexicalEditor"})));a=d});return function(){d(),a!==null&&j.unregisterTypingPerf(a)}},[b,g,f]);return null}g["default"]=a}),98);
+__d("MLCInstrumentationPlugin.react",["MLCHealthInstrumentationPlugin__INTERNAL.react","MLCInteractionInstrumentationPlugin__INTERNAL.react","MLCTypingPerformancePlugin__INTERNAL.react","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react");function a(a){return h.jsxs(h.Fragment,{children:[h.jsx(c("MLCTypingPerformancePlugin__INTERNAL.react"),babelHelpers["extends"]({},a)),h.jsx(c("MLCHealthInstrumentationPlugin__INTERNAL.react"),babelHelpers["extends"]({},a)),h.jsx(c("MLCInteractionInstrumentationPlugin__INTERNAL.react"),babelHelpers["extends"]({},a))]})}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+*
+* @noflow
+* @nolint
+* @preventMunge
+* @preserve-invariant-messages
+* @generated
+* @preserve-whitespace
+* @fullSyntaxTransform
+ */__d("LexicalComposerContext.prod",["react"],(function $module_LexicalComposerContext_prod(global,require,requireDynamic,requireLazy,module,exports){var c_react;
+var c=c_react||(c_react=require("react"));var d=c.createContext(null);exports.LexicalComposerContext=d;exports.createLexicalComposerContext=function(a,e){var b=null;null!=a&&(b=a[1]);return{getTheme:function getTheme(){return null!=e?e:null!=b?b.getTheme():null;}};};exports.useLexicalComposerContext=function(){var a=c.useContext(d);if(null==a)throw Error("Minified Lexical error #6; see codes.json for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");return a;};}),null);
