@@ -20,7 +20,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
